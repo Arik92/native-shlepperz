@@ -22,8 +22,7 @@ class LoginForm extends Component {
 
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then(this.onLoginSuccess.bind(this))
-    .catch(this.onLoginFail.bind(this));//createuser catch
-    });//signIn catch
+    .catch(this.onLoginFail.bind(this));//createuser catch    
   }//on button press
 
   onLoginFail() {

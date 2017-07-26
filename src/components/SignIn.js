@@ -9,7 +9,7 @@ import { Card,
  } from './common';
 
 
-class LoginForm extends Component {
+class SignIn extends Component {
   state = {
     email: '',
     password: '',
@@ -24,7 +24,6 @@ class LoginForm extends Component {
       .catch(
         this.onLoginFail.bind(this)
       );//createuser catch
-
   }//on button press
 
   onLoginFail() {
@@ -80,9 +79,5 @@ class LoginForm extends Component {
     );//return
   }//render
 }//App
-
-// const styles = {
-//
-// };
 
 export default SignIn;
